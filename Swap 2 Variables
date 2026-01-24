@@ -1,0 +1,18 @@
+// swap two numbers using a temp variable
+
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc= new Scanner(System.in);
+        System.out.println("Enter Value 1:");
+        int a= sc.nextInt();
+        System.out.println("Enter Value 2:");
+        int b= sc.nextInt();
+        int temp= a;
+        a=b;
+        b= temp;
+        System.out.println("Swapped Results: \nValue 1: "+ a+ "\nValue 2: "+b);
+        
+    }
+}
