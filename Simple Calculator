@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc= new Scanner(System.in);
+        System.out.println("Welcome to Simple Calculator!");
+        System.out.println("Enter value of variable 1:");
+        double a= sc.nextDouble();
+        System.out.println("Enter value of variable 2:");
+        double b= sc.nextDouble();
+        double add = a+b;
+        double sub= a-b;
+        double mul= a*b;
+        double div= a/b;
+        System.out.println("The sum is: "+ add);
+        System.out.println("The difference is: "+ sub);
+        System.out.println("The product is: "+ mul);
+        System.out.println("The division result is: "+ div);
+        
+    }
+}
