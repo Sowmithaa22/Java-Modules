@@ -1,0 +1,41 @@
+public class Main
+{
+	public static void main(String[] args) {
+		System.out.println("Hello World");
+		greet();
+		int result= add(10,20);
+		System.out.println(result);
+		addition(30,40);
+	    int result2= getnumber();
+		System.out.println(result2);	
+	}
+	
+// 	returntype methodname (parameters) {
+// 	    //code
+// 	    return value; (optional) 
+// 	}
+
+    // Types: (wrt Parameters and Return types)
+    // 1. Without params and w/o return types
+    // 2. With params and with return types
+    // 3. with params without return types
+    // 4. without params and with return types
+    
+    // 1. Without params and w/o return types
+    public static void greet() {
+        System.out.println("Hellooo!");
+    }
+    // 2. With params and with return types
+    public static int add(int a,int b) {
+        return a+b;
+    }
+    // 3. with params without return types
+    public static void addition(int a,int b) {
+        System.out.println(a+b);
+    }
+    // 4. without params and with return types
+    public static int getnumber() {
+        return 100;
+    }
+    
+}
