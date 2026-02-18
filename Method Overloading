@@ -1,0 +1,17 @@
+public class Main
+{
+	public static void main(String[] args) {
+	
+		int result= add(10,20);
+		System.out.println(result);
+	}
+    
+    // Compile Time polymorphism, therefore based on values it chooses which method to choose
+    // Method Overloading
+    public static int add(int a,int b) {
+        return a+b;
+    }
+    public static double add(double a,double b) {
+        return a+b;
+    }
+}
