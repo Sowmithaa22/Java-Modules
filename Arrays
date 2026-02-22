@@ -1,0 +1,24 @@
+import java.util.Arrays;
+
+public class Main {
+    public static void main(String[] args) {
+        
+        //declaration of an array
+        int[] number= {10,20,30,40,50};
+        System.out.println(number[3]);
+        
+        //rewrite and traversal
+        number[3]=16;
+        for(int i=0; i<number.length; i++){
+            System.out.print(number[i]+ " ");
+        }
+        
+        //new keyword
+        String[] names= new String[2]; // value mentioned is size and not index
+        names[0]= "Abc";
+        names[1]= "xyz";
+        System.out.println(Arrays.toString(names));
+        
+        
+    }
+}
