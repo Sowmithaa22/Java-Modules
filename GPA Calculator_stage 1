@@ -1,0 +1,71 @@
+/* 
+Mini practice day 
+If conditions- marks based Grades,
+Loops- check for fail grades, 
+Switch case- Test type (sem), 
+Methods and Functions- Report Generation, 
+Arrays- marks input
+String- declaration)
+
+*/
+
+import java.util.Scanner;
+
+public class Report {
+    public static void main(String[] args) {
+        
+        Scanner sc= new Scanner(System.in);
+        System.out.println("****Shiv Nadar University****");
+        System.out.println("**Gradesheet**");
+        
+        System.out.println("Enter your name:");
+        String name= sc.nextLine();
+        
+        System.out.println("Enter your registration number:");
+        int rollno= sc.nextInt();
+        
+        System.out.println("Enter your marks following this order:");
+        System.out.println("[Statistics, English, Java, AI, OS");
+        Double marks[]= new Double[5];
+        System.out.println("Enter 5 subject marks");
+        for (int i=0; i<marks.length; i++) {
+            marks[i]= sc.nextDouble();
+        }
+        
+        System.out.println("Choose exam type: \n 1. CIA \n 2. Mid-semester \n 3. End-Semester");
+        int option= sc.nextInt();
+        
+        switch(option) {
+            case 1:
+                System.out.println("A total of 20% would be considered for grade calculation");
+                break;
+                
+            case 2:
+                System.out.println("A total of 30% would be considered for grade calculation");
+                break;
+                
+            case 3:
+                System.out.println("A total of 50% would be considered for final grade");
+                break;
+            
+            default:
+                System.out.println("Invalid Input");
+        }
+        
+        for(int j=0; j<marks.length; j++) {
+            if (marks[j]<30) {
+                System.out.println("You have failed a course! Work hard next semester.");
+            }
+        }
+        
+        double sum=0;
+        for(int j=0; j<marks.length; j++) {
+            sum += j;
+        }
+        
+        double average= sum/marks.length;
+
+        
+        
+    }
+}
