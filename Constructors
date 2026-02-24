@@ -1,0 +1,22 @@
+// define a class and declare a variable
+// define the variable using constructors
+// use a method to print
+
+public class Student {
+    String name;
+    int age;
+    
+    Student() {
+        name= "abcde";
+        age= 20;
+    }
+    
+    void print() {
+        System.out.println(name+ " " + age);
+    }
+    
+    public static void main(String[] args) {
+        Student s= new Student();
+        s.print();
+    }
+}
