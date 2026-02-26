@@ -1,0 +1,40 @@
+// Encapsulation
+
+class Bankbalance {
+    private double balance;
+    
+    // setter
+    public void deposit(double amount) {
+        if(amount>0) {
+            balance+=amount;
+        }
+        else
+            System.out.println("Invalid deposit request!");
+    }
+    
+    public void withdraw(double amount) {
+        if (amount<balance && amount>100)
+            balance-=amount;
+        else 
+            System.out.println("Insufficient balance!");
+    }
+    
+    
+    // getter
+    public double getbalance() {
+        return balance;
+    }
+}
+
+
+public class ATM {
+    public static void main(String[] args) {
+        Bankbalance obj= new Bankbalance();
+        
+        obj.deposit(10000);
+        obj.withdraw(3700);
+        
+        System.out.println("Current balance: "+obj.getbalance());
+
+    }
+}
