@@ -1,0 +1,48 @@
+public class Main {
+
+    // Method to check age
+    static void checkAge(int age) {
+        if (age < 18) {
+            throw new ArithmeticException("You must be at least 18 yrs to vote");
+        } else {
+            System.out.println("Access granted! You're eligible to vote!");
+        }
+    }
+
+    public static void main(String[] args) {
+
+        int m = 10;
+        int n = 0;
+
+        // Division Exception
+        try {
+            int ans = m / n;
+            System.out.println(ans);
+        }
+        catch (ArithmeticException e) {
+            System.out.println("Cannot divide by zero!");
+        }
+
+        int arr[] = new int[5];
+
+        // Array Index Exception
+        try {
+            System.out.println(arr[16]);
+        }
+        catch (IndexOutOfBoundsException e) {
+            System.out.println("Index out of bound!");
+        }
+        finally {
+            System.out.println("Handles Index out of bound exceptions");
+        }
+
+        // Custom throw example
+        try {
+            checkAge(20);
+        }
+        catch (ArithmeticException e) {
+            System.out.println(e.getMessage());
+        }
+
+    }
+}
