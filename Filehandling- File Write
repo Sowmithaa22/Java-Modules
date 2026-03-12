@@ -1,0 +1,22 @@
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            FileWriter sample= new FileWriter("Sample.txt");
+            
+            sample.write("Hello! \n");
+            sample.write("Learning is fun.");
+            
+            sample.close();
+            
+            System.out.println("File written successfully.");
+        }
+        
+        catch(IOException e) {
+            System.out.println("IO Exception- error in file creation");
+        }
+    }
+}
