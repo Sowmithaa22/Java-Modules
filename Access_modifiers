@@ -1,0 +1,23 @@
+1. public:
+Accessible from anywhere
+No restrictions across packages or classes
+- public int count;
+
+2. private:
+Accessible only within the same class
+Commonly used for encapsulation
+- private int salary;
+
+3. default (Package-Private):
+No keyword is used
+Accessible within the same package only
+Not accessible from outside the package (even in subclasses)
+- int age; // default access
+
+4. protected:
+Accessible:
+Within the same package
+In subclasses, even if they are in different packages
+Strongly associated with inheritance
+- protected String name;
+
